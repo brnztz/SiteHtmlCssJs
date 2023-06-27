@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bransa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="container">
+        <section id="systembar"></section>
+        <header>
+            <img src="Bransa.png">
+            <form>
+                <input type="text" placeholder="O que você está procurando?">
+                <button> Buscar </button>
+            </form>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Produtos</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Frios</a></li>
+                        <li>Pizzas</li>
+                        <li>Lasanhas</li>
+                    </ul>
+                </li>
+                <li><a href="pag1.html"> Cidades</a>
+                    <ul class="dropdown">
+                        <li><a href="pag1.html">Tabela</a></li>
+                    </ul>
+                </li>
+                <li><a href="pag2.html"> Cadastre-se</a>
+                    <ul class="dropdown">
+                        <li><a href="pag2.html">Formulario</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div style="overflow-x:auto;">
+                <div id="container2">
+                    <section id="conteudo">
+                        <table id="myTable">
+                            <input type="text" placeholder="Filtrar Pelo Nome" id="myInput" onkeyup="filter()">
+                            <br><br>
+                            <caption><b>Tabela com as cidades que atendemos e seus respectivos vendedores e formas de
+                                    contato</b></caption>
+                            <tr>
+                                <th>Vendedor</th>
+                                <th>Cidade</th>
+                                <th>Telefone</th>
+                                <th>Email</th>
+                            </tr>
+                            <tr>
+                                <td>João Silva</td>
+                                <td>Cuiabá</td>
+                                <td>(65) 1234-5678</td>
+                                <td>joao.silva@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Maria Santos</td>
+                                <td>Várzea Grande</td>
+                                <td>(65) 9876-5432</td>
+                                <td>maria.santos@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Pedro Oliveira</td>
+                                <td>Rondonópolis</td>
+                                <td>(66) 5555-5555</td>
+                                <td>pedro.oliveira@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Pereira</td>
+                                <td>Sinop</td>
+                                <td>(66) 9999-9999</td>
+                                <td>ana.pereira@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Costa</td>
+                                <td>Sorriso</td>
+                                <td>(66) 7777-7777</td>
+                                <td>carlos.costa@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Larissa Fernandes</td>
+                                <td>Tangará da Serra</td>
+                                <td>(65) 2222-2222</td>
+                                <td>larissa.fernandes@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Rafaela Oliveira</td>
+                                <td>Barra do Garças</td>
+                                <td>(66) 8888-8888</td>
+                                <td>rafaela.oliveira@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Fernando Souza</td>
+                                <td>Primavera do Leste</td>
+                                <td>(66) 3333-3333</td>
+                                <td>fernando.souza@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Alice Costa</td>
+                                <td>Pontes e Lacerda</td>
+                                <td>(65) 4444-4444</td>
+                                <td>alice.costa@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Roberto Santos</td>
+                                <td>Lucas do Rio Verde</td>
+                                <td>(65) 5555-5555</td>
+                                <td>roberto.santos@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Patrícia Pereira</td>
+                                <td>Juína</td>
+                                <td>(66) 6666-6666</td>
+                                <td>patricia.pereira@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>André Almeida</td>
+                                <td>Nova Mutum</td>
+                                <td>(65) 6666-9999</td>
+                                <td>andre.almeida@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Camila Lima</td>
+                                <td>Alta Floresta</td>
+                                <td>(66) 1111-1111</td>
+                                <td>camila.lima@bransa.com</td>
+                            </tr>
+                            <tr>
+                                <td>Lucas Castro</td>
+                                <td>Colíder</td>
+                                <td>(66) 2222-3333</td>
+                                <td>lucas.castro@bransa.com</td>
+                            </tr>
+
+                        </table>
+                    </section>
+                    <section id="anuncios">
+                        <h1>ANUNCIE AQUI</h1>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="Bransa.png">
+            <p>Bransa - Todos os direitos reservados</p>
+            <p>0800 000 0000</p>
+        </footer>
+    </div>
+</body>
+
+</html>

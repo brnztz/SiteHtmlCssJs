@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bransa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="container">
+        <section id="systembar"></section>
+        <header>
+            <img src="Bransa.png">
+            <form>
+                <input type="text" placeholder="O que você está procurando?">
+                <button> Buscar </button>
+            </form>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Produtos</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Frios</a></li>
+                        <li>Pizzas</li>
+                        <li>Lasanhas</li>
+                    </ul>
+                </li>
+                <li><a href="pag1.html"> Cidades</a>
+                    <ul class="dropdown">
+                        <li><a href="pag1.html">Tabela</a></li>
+                    </ul>
+                </li>
+                <li><a href="pag2.html"> Cadastre-se</a>
+                    <ul class="dropdown">
+                        <li><a href="pag2.html">Formulario</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="container2">
+                <section id="conteudo">
+                    <div id="formulariof">
+                        <form onsubmit="return valida()">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="nome">Nome</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="nome" name="nome" placeholder="Insira seu Nome">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fone">Celular</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="tel" id="fone" name="fone" maxlength="11" placeholder="Informe seu celular" oninput="mascaraTEL(this)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="cpf">CPF</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="cpf" name="cpf" placeholder="Informe seu CPF" oninput="mascaraCPF(this)">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="datanasc">Data de Nascimento</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="date" id="nasc" name="nasc" placeholder="Informe sua Data de Nascimento">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="estado">Seu Estado</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <select id="estado" name="estado">
+                                            <option value="">Selecione...</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="email">E-mail</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="email" id="email" name="email" placeholder="Informe seu E-mail">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <input type="submit" value="Cadastrar">
+                                </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="anuncios">
+                    <h1>ANUNCIE AQUI</h1>
+                </section>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <img src="Bransa.png">
+        <p>Bransa - Todos os direitos reservados</p>
+        <p>0800 000 0000</p>
+    </footer>
+    </div>
+</body>
+
+</html>
